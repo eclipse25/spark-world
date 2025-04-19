@@ -3,3 +3,5 @@ jupyterlab
 pandas
 matplotlib
 seaborn
+ipykernel
+pyarrow
