@@ -11,14 +11,14 @@ Explore, preprocess, and analyze large-scale data with scalable tools.
 ### 📁 Folder Structure
 ```
 spark-world/
-├── churn-prediction/          # Individual project directory
-│   ├── data/                  # Raw and cleaned datasets
-│   ├── notebooks/             # Jupyter notebooks for exploration and modeling
-│   └── scripts/               # PySpark scripts (e.g., model training, ETL)
-├── projects/                  # Placeholder for future projects
-├── docker-compose.yml         # Docker config for Jupyter + Spark environment
-├── requirements.txt           # Python dependencies for local use
-└── README.md                  # This file
+├── projects/                  # Directory for Spark-based projects
+│   └── project/               # Example project folder
+│       ├── data/              # Raw and processed datasets
+│       ├── notebooks/         # Jupyter notebooks for EDA and prototyping
+│       └── scripts/           # PySpark scripts (ETL, model training, etc.)
+├── docker-compose.yml         # Docker setup for Spark + Jupyter environment
+├── requirements.txt           # Python dependencies for local development
+└── README.md                  # Project overview and usage guide
 ```
 
 <br>
