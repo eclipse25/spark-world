@@ -33,3 +33,38 @@
 3. **이탈 고객의 특성 분석을 통한 인사이트 도출**
 
 <br>
+
+### ⚙️ How to Run
+
+#### 1. Jupyter Notebook (`EDA.ipynb`)
+
+Jupyter 환경에서 하려면 아래처럼 실행한다.
+
+```bash
+# Docker Compose로 JupyterLab 환경 실행
+docker-compose up
+```
+
+1. 로그에서 나오는 웹 브라우저 링크로 접속하거나 
+2. `http://localhost:8888`로 접속한 후 로그에 나오는 토큰을 입력하고 `notebooks/EDA.ipynb`를 열어 셀을 실행
+
+<br>
+
+#### 2. Python Scripts (Docker + Makefile)
+
+Makefile이 있는 디렉토리에서 Docker를 이용해 전체 분석 및 모델링 파이프라인을 실행할 수 있다.
+
+```bash
+# 빌드 (Docker 이미지 생성)
+make build
+
+# 실행 (main.py 내부 파이프라인 수행)
+make run
+
+# 컨테이너를 종료
+make down
+```
+
+실행 결과는 로그 메시지와 함께 최종 `ROC AUC Score`로 출력된다.
+
+<br>
