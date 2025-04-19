@@ -8,5 +8,11 @@ services:
       - "8888:8888"
     volumes:
       - ./projects:/home/jovyan/projects
+      - ./requirements.txt:/tmp/requirements.txt
     environment:
       - JUPYTER_ENABLE_LAB=yes
+    command: >
+      bash -c "
+        pip install -r /tmp/requirements.txt &&
+        start.sh jupyter lab
+      "

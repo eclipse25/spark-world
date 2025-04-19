@@ -1,4 +1,5 @@
 pyspark==3.5.0
-findspark
-jupyter
+jupyterlab
 pandas
+matplotlib
+seaborn
