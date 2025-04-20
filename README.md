@@ -12,7 +12,6 @@ Explore, preprocess, and analyze large-scale data with scalable tools.
 ```
 spark-world/
 ├── docs/                      # Spark-related study notes and concepts
-│   └── intro.md               # High-level overview of Spark and its components
 │
 ├── projects/                  # Individual Spark-based projects
 │   └── churn-prediction/      # Example project for customer churn prediction
